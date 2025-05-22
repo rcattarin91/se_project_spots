@@ -18,3 +18,5 @@ This project is being built to create an interactive social media web applicatio
 This webpage is deployed to Github pages.
 
 - [Depolyment Link](https://rcattarin91.github.io/se_project_spots/)
+
+\*\*\*Will make video once corrections are made
