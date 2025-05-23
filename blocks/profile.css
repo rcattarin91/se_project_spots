@@ -46,7 +46,8 @@
 }
 
 .profile__edit-btn {
-  width: 107.34px;
+  padding: 0;
+  width: fit-content;
   height: 16px;
   display: flex;
   align-items: center;
@@ -115,8 +116,7 @@
   }
 
   .profile__description {
-    margin: 0 0 32px;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin: 0 auto 32px;
     max-width: 288px;
   }
 
@@ -126,8 +126,6 @@
 
   .profile__add-btn {
     max-width: 288px;
-    height: 52px;
-    display: flex;
     justify-content: center;
     margin: 0;
     width: 100%;

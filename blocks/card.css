@@ -18,7 +18,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  min-width: 119px;
+  max-width: 353px;
 }
 
 .card__content {
@@ -51,10 +51,12 @@
   .card__title {
     font-size: 16px;
     line-height: 1;
-    min-width: 95px;
+    max-width: 250px;
   }
 
   .card__like-btn {
     width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
