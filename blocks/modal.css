@@ -11,12 +11,12 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .modal_is-open {
   visibility: visible;
   opacity: 1;
-  transition: 500ms;
 }
 
 .modal__container {
@@ -27,6 +27,7 @@
   padding: 32px 50px;
   position: relative;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .modal__close-btn {
@@ -74,6 +75,7 @@
   font-size: 32px;
   font-weight: 500;
   color: #212121;
+  line-height: 1;
 }
 
 .modal__form {
@@ -85,9 +87,8 @@
   margin: 0 0 32px;
   font-size: 16px;
   font-weight: 500;
-  color: #212121;
+  color: rgba(33, 33, 33, 0.7);
   line-height: 1.1;
-  opacity: 70%;
 }
 
 .modal__input {
@@ -95,24 +96,21 @@
   margin: 8px 0 0;
   width: 100%;
   padding: 16px 0 16px;
-
-  border: 1px solid #212121;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.4);
   border-radius: 8px;
-  opacity: 40%;
   box-shadow: none;
   font-size: 20px;
   font-weight: 500;
-  color: #212121;
 }
 
 .modal__input:hover {
-  opacity: 100%;
+  border-color: rgba(33, 33, 33);
   cursor: pointer;
 }
 
 .modal__input::placeholder {
   color: #2121214d;
-  padding-left: 12px;
 }
 
 .modal__input:focus {
@@ -121,6 +119,10 @@
 }
 
 @media screen and (max-width: 627px) {
+  .modal__container {
+    padding: 20px;
+  }
+
   .modal__title {
     font-size: 20px;
     margin: 0 0 24px;
@@ -136,11 +138,8 @@
   }
 
   .modal__close-btn {
-    margin: 0 0 20px;
+    margin: 0 0 24px;
   }
-
-  /* I understand the bottom margin for "close-btn (X)" ^^ was supposed to be 24px. I think 20px looked
-  like it replicated the Figma latout the best. 24px seemed to high. I'll change it back if needed though! */
 
   .modal__input {
     width: 100%;

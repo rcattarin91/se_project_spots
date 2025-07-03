@@ -19,9 +19,6 @@ const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const newPostImageEl = document.querySelector(".card__image");
-const newPostCaptionEl = document.querySelector(".card__title");
-
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;

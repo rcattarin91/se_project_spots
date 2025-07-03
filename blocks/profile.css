@@ -112,7 +112,7 @@
   .profile__name {
     font-size: 20px;
     margin: 0 0 6px;
-    min-width: 288px;
+    max-width: 288px;
   }
 
   .profile__description {
